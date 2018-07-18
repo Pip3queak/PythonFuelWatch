@@ -16,7 +16,6 @@ tomp=parse(tom.text)
 #ptomp['entries'][0]['price'])
 
 
-
 todaylist = []
 for px in tp['entries']:
     todaydict = {'price' : px['price'],'location' : px['location'],'address' : px['address'],'brand' : px['brand'],'updated' : px['updated']}
@@ -32,9 +31,6 @@ merge = todaylist + tomorrowlist
 def sort_name(merge):
     return merge['price']
 sorted(merge, key=sort_name)
-
-
-
 
 
 html = '''
@@ -80,13 +76,6 @@ html_footer = '''
     </body>
 </html>
 '''
-
-
-
-
-
-
-
 
 file = open('something2.html', 'w')
 file.write(html + html_join + html_footer)
