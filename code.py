@@ -15,19 +15,7 @@ tomp=parse(tom.text)
 #ptp['entries'][0]['price'])
 #ptomp['entries'][0]['price'])
 
-'''
-l = [1,2,4] # this is a list
-l[2] = 4 # this bracket is to access the index in the list
 
-d = {'name':'Robin', 'age':44} # this is a dict
-d['age'] = 44 # this square bracket is to access the value of the key 'age'
-'''
-
-'''
-for keyz in tp['entries']:
-    tp.keys(keyz))
-type(keyz))
-'''
 
 todaylist = []
 for px in tp['entries']:
@@ -47,13 +35,7 @@ sorted(merge, key=sort_name)
 
 
 
-'''
-for i in merge:
-    print('<tr>')
-    for x in i.values():
-        print('<td>',x,'</td>')
-    print('</tr>')
-'''
+
 
 html = '''
 <html>
@@ -100,16 +82,7 @@ html_footer = '''
 '''
 
 
-'''
-----
-To Write into a file
-----
->>> file = open('something2.html', 'w')
->>> file.write('<h1>Hello!</h1>')
-15
->>> file.close()
 
-'''
 
 
 
@@ -122,6 +95,42 @@ file.close()
 
 
 
+
+
+'''
+NOTES
+---------------
+
+for i in merge:
+    print('<tr>')
+    for x in i.values():
+        print('<td>',x,'</td>')
+    print('</tr>')
+'''
+
+'''
+----
+To Write into a file
+----
+>>> file = open('something2.html', 'w')
+>>> file.write('<h1>Hello!</h1>')
+15
+>>> file.close()
+
+'''
+'''
+l = [1,2,4] # this is a list
+l[2] = 4 # this bracket is to access the index in the list
+
+d = {'name':'Robin', 'age':44} # this is a dict
+d['age'] = 44 # this square bracket is to access the value of the key 'age'
+'''
+
+'''
+for keyz in tp['entries']:
+    tp.keys(keyz))
+type(keyz))
+'''
 '''
 -----
 String Manipulation
